@@ -56,14 +56,14 @@
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #c2a816; }
+      border: solid 3px #d3b923; }
   .menu .nav-item {
     transform: translate3d(600px, 0, 0);
     transition: all 0.7s ease-out; }
     .menu .nav-item.show {
       transform: translate3d(0, 0, 0); }
     .menu .nav-item.current > a {
-      color: #c2a816; }
+      color: #d3b923; }
   .menu .nav-link {
     display: inline-block;
     position: relative;
@@ -75,7 +75,7 @@
     text-decoration: none;
     transition: all 0.7s ease-out; }
     .menu .nav-link:hover {
-      color: #c2a816; }
+      color: #d3b923; }
 
 .nav-item:nth-child(1) {
   transition-delay: 0.1s; }
@@ -134,7 +134,7 @@ header {
   width: 100%; }
 
 .text-secondary {
-  color: #c2a816; }
+  color: #d3b923; }
 
 .btn, .btn-dark, .btn-light {
   display: block;
@@ -144,7 +144,7 @@ header {
   width: 75%;
   margin: 0 auto 0.3rem auto; }
   .btn:hover, .btn-dark:hover, .btn-light:hover {
-    background: #c2a816;
+    background: #d3b923;
     color: #000; }
 
 .btn-dark {
@@ -163,7 +163,7 @@ main {
     main .icons a {
       padding: 0.4rem; }
       main .icons a:hover {
-        color: #c2a816;
+        color: #d3b923;
         transition: all 0.7s ease-out; }
   main#home {
     overflow: hidden; }
@@ -179,7 +179,7 @@ main {
     grid-area: bioimage;
     margin: auto;
     border-radius: 50%;
-    border: #c2a816 3px solid; }
+    border: #d3b923 3px solid; }
   .about-info .bio {
     grid-area: bio;
     font-size: 1.5rem; }
@@ -188,7 +188,7 @@ main {
   .about-info .job {
     background: #515151;
     padding: 0.5rem;
-    border-bottom: #c2a816 5px solid; }
+    border-bottom: #d3b923 5px solid; }
     .about-info .job .job-1 {
       grid-area: job1; }
     .about-info .job .job-2 {
@@ -204,22 +204,31 @@ main {
     border: 3px #fff solid; }
     .projects img:hover {
       opacity: 0.5;
-      border-color: #c2a816;
+      border-color: #d3b923;
       transition: all 0.7s ease-out; }
-  .projects .project-desc {
+  .projects .project-text {
     text-align: center;
-    border: #c2a816 3px solid;
-    font-size: 1.2rem;
-    padding: 4px; }
+    border: #d3b923 3px solid;
+    min-height: 350px; }
+    .projects .project-text hr {
+      height: 2px;
+      width: 75%;
+      color: #d3b923; }
+    .projects .project-text .project-header {
+      font-size: 1.5rem; }
+    .projects .project-text .project-desc {
+      font-size: 1.2rem;
+      padding: 4px; }
 
 .selecting {
   display: grid;
   gap: 0.5rem;
-  font-size: 1.3rem; }
+  font-size: 1.3rem;
+  margin-bottom: 1rem; }
   .selecting .btn-light {
     cursor: pointer; }
   .selecting .active {
-    background: #c2a816;
+    background: #d3b923;
     color: #000; }
 
 .boxes {
@@ -236,7 +245,7 @@ main {
     transition: all 0.7s ease-out; }
     .boxes div:hover, .boxes a:hover {
       padding: 1rem 2rem;
-      background: #c2a816;
+      background: #d3b923;
       color: #000; }
       .boxes div:hover span, .boxes a:hover span {
         color: #000; }
@@ -261,7 +270,7 @@ main {
       height: 250px;
       background: url("../img/portrait.jpg");
       border-radius: 50%;
-      border: solid 3px #c2a816;
+      border: solid 3px #d3b923;
       position: relative;
       top: 210px;
       left: 35px; }
@@ -285,7 +294,7 @@ main {
     .menu .nav-item {
       transform: translate3d(0, 0, 0); }
       .menu .nav-item .menu.current > a {
-        color: #c2a816; }
+        color: #d3b923; }
     .menu.index .menu-nav {
       width: 35%;
       height: 100vh;
@@ -297,11 +306,11 @@ main {
     .menu.index .nav-item {
       transform: translate3d(0, 0, 0); }
       .menu.index .nav-item .menu.current > a {
-        color: #c2a816; }
+        color: #d3b923; }
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .selecting {
-    grid-template-columns: repeat(5, 1fr); } }
+    grid-template-columns: repeat(6, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {

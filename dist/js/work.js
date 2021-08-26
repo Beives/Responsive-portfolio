@@ -16,10 +16,13 @@ const projects = document.querySelectorAll('.item');
 function changeVisibility(){
     projects.forEach(el => {
         if(el.dataset.type == currentSelection){
-            el.style.display = 'none';
+            el.style.display = 'block';
+        }
+        else if(currentSelection == ""){
+            el.style.display = 'block';
         }
         else{
-            el.style.display = 'block';
+            el.style.display = 'none';
         }
     });
 }

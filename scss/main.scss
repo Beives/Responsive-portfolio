@@ -153,18 +153,36 @@ main{
             @include easeOut;
         }
     }
-    .project-desc{
+
+    .project-text{
         text-align: center;
         border: $secondary-color 3px solid;
-        font-size: 1.2rem;
-        padding: 4px;
+        min-height: 350px;
+
+        
+        hr{
+            height: 2px;
+            width: 75%;
+            color: $secondary-color;
+        }
+
+        .project-header{
+            font-size: 1.5rem;
+        }
+
+        .project-desc{
+            font-size: 1.2rem;
+            padding: 4px;
+        }
     }
+    
 }
 
 .selecting{
     display: grid;
     gap: 0.5rem;
     font-size: 1.3rem;
+    margin-bottom: 1rem;
 
     .btn-light{
         cursor: pointer;

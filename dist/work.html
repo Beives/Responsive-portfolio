@@ -22,7 +22,7 @@
                 <div class="portrait"></div>
             </div>
             <ul class="menu-nav">
-                <li class="nav-item"><a href="/dist/" class="nav-link">Főoldal</a></li>
+                <li class="nav-item"><a href="index.html" class="nav-link">Főoldal</a></li>
                 <li class="nav-item"><a href="about.html" class="nav-link">Rólam</a></li>
                 <li class="nav-item current"><a href="work.html" class="nav-link">Projektek</a></li>
                 <li class="nav-item"><a href="contact.html" class="nav-link">Kapcsolat</a></li>
@@ -44,74 +44,184 @@
             <div class="selectBtn btn-light" data-btn="React">React</div>
             <div class="selectBtn btn-light" data-btn="C#">C#</div>
             <div class="selectBtn btn-light" data-btn="web">Web</div>
+            <div class="selectBtn btn-light" data-btn="laravel">Laravel</div>
+
         </div>
 
         <div class="projects">
 
-            <div class="item" data-type="web">
-                <a href="#!">
+            <div class="item" data-type="C#">
+                <a target="_blank" href="https://github.com/Beives/ASP-MVC-CRUD">
                     <img src="img/projects/project1.jpg">
                 </a>
 
-                <p class="project-desc">Lorem i illo quidem sed. Exercitationem sunt quibusdam quidem enim facere nesciunt doloremque fugit reiciendis labore, voluptates atque tempora eligendi aspernatur eaque voluptatum ab! Neque nisi provident aliquam.</p>
+                <div class="project-text">
+                    <h3 class="project-header">C# ASP.Net MVC CRUD</h3>
+                    <hr>
+                    <p class="project-desc">MVC mintán alapuló MS SQL szerverre csatlakozó ASP.NET alkalmazás, 2 oldallal, amelyeken elérhetőek a CRUD műveletek.</p>
+                </div>
 
-                <a href="" class="btn-dark">
+                <a target="_blank" href="https://github.com/Beives/ASP-MVC-CRUD" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project2.jpg">
+            <div class="item" data-type="laravel">
+                <a target="_blank" href="https://github.com/Beives/Laravel_CRUD">
+                    <img src="img/projects/project1.jpg">
                 </a>
 
-                <a href="" class="btn-light">
-                    <i class="fas fa-eye"></i> Project
-                </a>
+                <div class="project-text">
+                    <h3 class="project-header">Laravel CRUD</h3>
+                    <hr>
+                    <p class="project-desc">Laravel MVC, 5 összekapcsolt adatbázistábla adatait kezeli az alkalmazás. CRUD műveletek külön nézetekbe rendezve, az öt táblát összekapcsolt műveletekkel kezeli,vagyis egy-egy nézet és kontroller kezeli a CRUD-okat</p>
+                </div>
 
-                <a href="" class="btn-dark">
+                <a target="_blank" href="https://github.com/Beives/Laravel_CRUD" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project3.jpg">
+            <div class="item" data-type="C#">
+                <a target="_blank" href="https://github.com/Beives/ASP.NET-CRUD-API">
+                    <img src="img/projects/project1.jpg">
                 </a>
 
-                <a href="" class="btn-light">
-                    <i class="fas fa-eye"></i> Project
-                </a>
+                <div class="project-text">
+                    <h3 class="project-header">ASP.NET API</h3>
+                    <hr>
+                    <p class="project-desc">API backend, amivel egy tábla CRUD műveleteit érjük el. Tábla létrehozásához migration nyújt segítséget, ami a model alapjűn lett generálva. DTO-k közvetítik a megfelelő adatokat</p>
+                </div>
 
-                <a href="" class="btn-dark">
+                <a target="_blank" href="https://github.com/Beives/Laravel_CRUD" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project4.jpg">
+            <div class="item" data-type="React">
+                <a target="_blank" href="https://github.com/Beives/React">
+                    <img src="img/projects/project1.jpg">
                 </a>
 
-                <a href="" class="btn-light">
-                    <i class="fab fa-eye"></i> Project
-                </a>
+                <div class="project-text">
+                    <h3 class="project-header">React komponensek</h3>
+                    <hr>
+                    <p class="project-desc">Két react applikáció, egy youtube-hoz hasonló videólejátszó és keresősáv, leírással és ajánlott videókkal, és egy több különböző kisebb widgetet összefoglaló, hook-okat használó, töltés nélküli routing-os navigációval</p>
+                </div>
 
-                <a href="" class="btn-dark">
+                <a target="_blank" href="https://github.com/Beives/React" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
 
-            <div class="item">
-                <a href="#!">
-                    <img src="img/projects/project5.jpg">
+            <div class="item" data-type="PHP">
+                <a target="_blank" href="https://github.com/Beives/PHP_Blog">
+                    <img src="img/projects/project1.jpg">
                 </a>
 
-                <a href="" class="btn-light">
-                    <i class="fas fa-eye"></i> Project
+                <div class="project-text">
+                    <h3 class="project-header">PHP blog CMS</h3>
+                    <hr>
+                    <p class="project-desc">PHP alapú blog CMS, felhasználó regisztrációval, kommentelési lehetőséggel, admin felületen az adatbázistartalmak kezelésével, posztok WYSIWYG írásával</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/PHP_Blog" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+           
+            <div class="item" data-type="React">
+                <a target="_blank" href="https://github.com/Beives/react-nodeexpress_CRUD">
+                    <img src="img/projects/project1.jpg">
                 </a>
 
-                <a href="" class="btn-dark">
+                <div class="project-text">
+                    <h3 class="project-header">React + node-express</h3>
+                    <hr>
+                    <p class="project-desc">Egy adatkezelő react app, ami egy egyszerű node-express szerverrel kommunikál, amiben több összekapcsolt tábla CRUD műveleteihez vannak definiálva a metódusok.</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/react-nodeexpress_CRUD" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="item" data-type="C#">
+                <a target="_blank" href="https://github.com/Beives/WCF-szerver-kliens">
+                    <img src="img/projects/project1.jpg">
+                </a>
+
+                <div class="project-text">
+                    <h3 class="project-header">WCF szerver + wpf kliens</h3>
+                    <hr>
+                    <p class="project-desc">Kliens-szerver alkalmazás, ahol adat és hibaszerződésekkel kommunikál a szerver, amit egy host konzolos alkalmazással indíthatunk el. A kliens egy WPF alkalmazás megvalósul egy alapvető authentikációs rendszer, belépve elérhetőek a CRUD műveletek</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/WCF-szerver-kliens" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="item" data-type="C#">
+                <a target="_blank" href="https://github.com/Beives/Rest_PHP_Csharp">
+                    <img src="img/projects/project1.jpg">
+                </a>
+
+                <div class="project-text">
+                    <h3 class="project-header">WPF kliens + php szerver REST API</h3>
+                    <hr>
+                    <p class="project-desc">Kliens-szerver alkalmazás, egy WPF alkalmazás a kliens oldalon, ahol belépve elérhetőek a CRUD műveletek, megvalósuláshoz a RESTSHARP könyvtár lett segítségül hívva. A szerver egy php alapú alkalmazás</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/Rest_PHP_Csharp" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="item" data-type="web">
+                <a target="_blank" href="https://github.com/Beives/Bootstrap4">
+                    <img src="img/projects/project1.jpg">
+                </a>
+
+                <div class="project-text">
+                    <h3 class="project-header">Bootstrap 4 oldalak</h3>
+                    <hr>
+                    <p class="project-desc">3 html oldal bootstrap 4-el megformálva, sablonból, teljesen nulláról és komponensek összetételével</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/Bootstrap4" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="item" data-type="PHP">
+                <a target="_blank" href="https://github.com/Beives/PHP_Restaurant">
+                    <img src="img/projects/project1.jpg">
+                </a>
+
+                <div class="project-text">
+                    <h3 class="project-header">PHP étterem oldal</h3>
+                    <hr>
+                    <p class="project-desc">PHP alapú weboldal, ami tömbökből nyeri ki az adatot a különböző oldalakra</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/PHP_Restaurant" class="btn-dark">
+                    <i class="fab fa-github"></i> Github
+                </a>
+            </div>
+
+            <div class="item" data-type="web">
+                <a target="_blank" href="https://github.com/Beives/Responsive-portfolio">
+                    <img src="img/projects/project1.jpg">
+                </a>
+
+                <div class="project-text">
+                    <h3 class="project-header">Portfolio oldal</h3>
+                    <hr>
+                    <p class="project-desc">Ennek az oldalnak a forráskódja, SASS stílusszerkesztve</p>
+                </div>
+
+                <a target="_blank" href="https://github.com/Beives/Responsive-portfolio" class="btn-dark">
                     <i class="fab fa-github"></i> Github
                 </a>
             </div>
