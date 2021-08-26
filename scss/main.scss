@@ -1,7 +1,6 @@
 @import 'config';
 @import 'menu';
 
-
 *{
     box-sizing: border-box;
 }
@@ -27,7 +26,8 @@ h1, h2, h3{
     &.sm-heading{
         margin-bottom: 2rem;
         padding: 0.2rem 1rem;
-        background: rgba(lighten($primary-color, 2), 0.5);
+        width: 50%;
+        font-size: 1.55rem;
     }
 }
 
@@ -44,106 +44,6 @@ header{
 
 .text-secondary{
     color: $secondary-color;
-}
-
-main{
-    padding: 4rem;
-    min-height: calc(100vh - 60px);
-    .icons{
-        margin-top: 1rem;
-        a {
-            padding: 0.4rem;
-
-            &:hover{
-                color:$secondary-color;
-                @include easeOut;
-            }
-        }
-    }
-
-    &#home{
-        overflow: hidden;
-        h1{
-            margin-top: 20vh;
-        }
-    }
-}
-
-.about-info{
-    display: grid;
-    gap: 30px;
-    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
-    grid-template-columns: repeat(3, 1fr);
-
-    .bio-img{
-        grid-area: bioimage;
-        margin: auto;
-        border-radius: 50%;
-        border: $secondary-color 3px solid;
-    }
-    
-    .bio{
-        grid-area: bio;
-        font-size: 1.5rem;
-    }
-    
-    .job{
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
-
-        .job-1{
-            grid-area: job1;
-        }
-        .job-2{
-            grid-area: job2;
-        }
-        .job-3{
-            grid-area: job3;
-        }
-    }
-}
-
-.projects{
-    display: grid;
-    gap: 0.7rem;
-
-    img{
-        width:100%;
-        border: 3px #fff solid;
-
-        &:hover{
-            opacity: 0.5;
-            border-color: $secondary-color;
-            @include easeOut;
-        }
-    }
-}
-
-.boxes{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 1rem;
-
-    div{
-        font-size: 2rem;
-        border: 3px #fff solid;
-        padding: 1.5rem 2.5rem;
-        margin-bottom: 3rem;
-        @include easeOut;
-
-        &:hover{
-            padding: 1rem 2rem;
-            background: $secondary-color;
-            color: set-text-color($secondary-color);
-            span{
-                color:set-text-color($secondary-color);
-            }
-        }
-    }
-
 }
 
 .btn{
@@ -170,6 +70,121 @@ main{
     @extend .btn;
     background: lighten($primary-color, 25);
     color: #fff;
+}
+
+//index
+
+main{
+    padding: 4rem;
+    min-height: calc(100vh - 60px);
+    .icons{
+        margin-top: 1rem;
+        a {
+            padding: 0.4rem;
+
+            &:hover{
+                color:$secondary-color;
+                @include easeOut;
+            }
+        }
+    }
+
+    &#home{
+        overflow: hidden;
+        h1{
+            margin-top: 20vh;
+        }
+    }
+}
+
+//about site
+
+.about-info{
+    display: grid;
+    gap: 30px;
+    grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+    grid-template-columns: repeat(3, 1fr);
+
+    .bio-img{
+        grid-area: bioimage;
+        margin: auto;
+        border-radius: 50%;
+        border: $secondary-color 3px solid;
+    }
+    
+    .bio{
+        grid-area: bio;
+        font-size: 1.5rem;
+        p{
+            margin: 5px 0px 10px 0px;
+        }
+    }
+
+    .job{
+        background: lighten($primary-color, 5);
+        padding: 0.5rem;
+        border-bottom: $secondary-color 5px solid;
+
+        .job-1{
+            grid-area: job1;
+        }
+        .job-2{
+            grid-area: job2;
+        }
+        .job-3{
+            grid-area: job3;
+        }
+    }
+}
+
+//projects site
+
+.projects{
+    display: grid;
+    gap: 0.7rem;
+
+    img{
+        width:100%;
+        border: 3px #fff solid;
+
+        &:hover{
+            opacity: 0.5;
+            border-color: $secondary-color;
+            @include easeOut;
+        }
+    }
+    .project-desc{
+        text-align: center;
+        border: $secondary-color 3px solid;
+        font-size: 1.2rem;
+        padding: 4px;
+    }
+}
+
+.boxes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 1rem;
+
+    div, a{
+        font-size: 2rem;
+        border: 3px #fff solid;
+        padding: 1.5rem 2.5rem;
+        margin-bottom: 3rem;
+        @include easeOut;
+
+        &:hover{
+            padding: 1rem 2rem;
+            background: $secondary-color;
+            color: set-text-color($secondary-color);
+            span{
+                color:set-text-color($secondary-color);
+            }
+        }
+    }
+
 }
 
 #main-footer{
