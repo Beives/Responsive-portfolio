@@ -161,6 +161,23 @@ main{
     }
 }
 
+.selecting{
+    display: grid;
+    gap: 0.5rem;
+    font-size: 1.3rem;
+
+    .btn-light{
+        cursor: pointer;
+    }
+
+    .active{
+        background: $secondary-color;
+        color: set-text-color($secondary-color);
+    }
+}
+
+//contact boxes
+
 .boxes{
     display: flex;
     flex-wrap: wrap;

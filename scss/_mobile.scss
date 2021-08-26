@@ -77,6 +77,10 @@
     .projects{
         grid-template-columns: repeat(4, 1fr);
     }
+    .selecting{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
 }
 
 @include mediaLg{
@@ -87,6 +91,9 @@
         margin-left: 25vw;
     }
 
+    .selecting{
+        grid-template-columns: repeat(4, 1fr);
+    }
 }
 
 @include mediaMd{
@@ -150,6 +157,10 @@
    .projects{
         grid-template-columns: repeat(2, 1fr);
     }   
+    .selecting{
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
 @include mediaSm{
@@ -166,5 +177,8 @@
       }
     .projects{
         grid-template-columns: 1fr;
+    }
+    .selecting{
+        grid-template-columns: repeat(2, 1fr);
     }
 }
