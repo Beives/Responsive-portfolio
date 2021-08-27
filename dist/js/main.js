@@ -31,11 +31,3 @@ function toggleMenu(){
         showMenu=false;
     }
 }
-
-if(document.location.pathname == "/contact"){
-    var email = "Yi5iYWtvczk4QGdtYWlsLmNvbQ";
-    document.getElementById("email").innerHTML = window.atob(email);
-    
-    var phoneNumber = "KzM2MzA1NjIzNDU2";
-    document.getElementById("phoneNumber").innerHTML = window.atob(phoneNumber);
-}

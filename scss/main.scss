@@ -25,9 +25,8 @@ h1, h2, h3{
 
     &.sm-heading{
         margin-bottom: 2rem;
-        padding: 0.2rem 1rem;
-        width: 50%;
         font-size: 1.55rem;
+        max-width: 90vw;
     }
 }
 

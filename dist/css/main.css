@@ -120,9 +120,8 @@ h1, h2, h3 {
     font-size: 6rem; }
   h1.sm-heading, h2.sm-heading, h3.sm-heading {
     margin-bottom: 2rem;
-    padding: 0.2rem 1rem;
-    width: 50%;
-    font-size: 1.55rem; }
+    font-size: 1.55rem;
+    max-width: 90vw; }
 
 a {
   color: white;
@@ -253,8 +252,7 @@ main {
     width: 65vw;
     height: 100vh;
     padding: 0;
-    position: relative;
-    top: 140px; }
+    position: relative; }
     #home .main-image {
       min-width: 250px;
       height: 250px;
@@ -262,11 +260,13 @@ main {
       border-radius: 50%;
       border: solid 3px #d3b923;
       position: relative;
-      top: 210px;
+      top: 335px;
       left: 35px; }
     #home .main-text {
       width: 100%;
-      margin-left: 5vw; }
+      margin-left: 5vw;
+      position: relative;
+      top: 130px; }
       #home .main-text .sm-heading {
         width: 75%; }
   .menu {
@@ -363,6 +363,10 @@ main {
     main .lg-heading {
       margin-top: 1rem;
       font-size: 5rem; }
+    main .sm-heading {
+      width: 75vh; }
+  #contact .lg-heading {
+    font-size: 3rem; }
   .projects {
     grid-template-columns: 1fr; }
   .selecting {
