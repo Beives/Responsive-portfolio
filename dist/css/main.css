@@ -185,16 +185,6 @@ main {
     font-size: 1.5rem; }
     .about-info .bio p {
       margin: 5px 0px 10px 0px; }
-  .about-info .job {
-    background: #515151;
-    padding: 0.5rem;
-    border-bottom: #d3b923 5px solid; }
-    .about-info .job .job-1 {
-      grid-area: job1; }
-    .about-info .job .job-2 {
-      grid-area: job2; }
-    .about-info .job .job-3 {
-      grid-area: job3; }
 
 .projects {
   display: grid;

@@ -119,22 +119,6 @@ main{
             margin: 5px 0px 10px 0px;
         }
     }
-
-    .job{
-        background: lighten($primary-color, 5);
-        padding: 0.5rem;
-        border-bottom: $secondary-color 5px solid;
-
-        .job-1{
-            grid-area: job1;
-        }
-        .job-2{
-            grid-area: job2;
-        }
-        .job-3{
-            grid-area: job3;
-        }
-    }
 }
 
 //projects site
