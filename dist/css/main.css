@@ -1,3 +1,15 @@
+@keyframes flashing {
+  from {
+    visibility: hidden;
+    opacity: 0; }
+  1% {
+    visibility: visible; }
+  50% {
+    opacity: 1; }
+  to {
+    visibility: hidden;
+    opacity: 0; } }
+
 .menu-btn {
   position: absolute;
   z-index: 3;
@@ -97,14 +109,14 @@ body {
   color: #fff;
   height: 100%;
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1.5; }
   body#bg-img {
     background: url(../img/background.jpg);
     background-attachment: fixed;
     background-size: cover; }
     body#bg-img::after {
-      content: '';
+      content: "";
       position: absolute;
       top: 0;
       right: 0;
@@ -113,12 +125,18 @@ body {
       z-index: -1;
       background: rgba(68, 68, 68, 0.9); }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin: 0;
   font-weight: 400; }
-  h1.lg-heading, h2.lg-heading, h3.lg-heading {
+  h1.lg-heading,
+  h2.lg-heading,
+  h3.lg-heading {
     font-size: 6rem; }
-  h1.sm-heading, h2.sm-heading, h3.sm-heading {
+  h1.sm-heading,
+  h2.sm-heading,
+  h3.sm-heading {
     margin-bottom: 2rem;
     font-size: 1.55rem;
     max-width: 90vw; }
@@ -172,7 +190,7 @@ main {
 .about-info {
   display: grid;
   gap: 30px;
-  grid-template-areas: 'bioimage bio bio' 'job1 job2 job3';
+  grid-template-areas: "bioimage bio bio" "job1 job2 job3";
   grid-template-columns: repeat(3, 1fr); }
   .about-info .bio-img {
     grid-area: bioimage;
@@ -185,6 +203,19 @@ main {
     .about-info .bio p {
       margin: 5px 0px 10px 0px; }
 
+.projects-container {
+  overflow: hidden; }
+
+.fade-effect {
+  position: absolute;
+  left: 0;
+  z-index: 5;
+  background-color: #444;
+  height: 100vh;
+  width: 100%;
+  animation: flashing 1000ms;
+  overflow: hidden; }
+
 .projects {
   display: grid;
   gap: 0.7rem; }
@@ -195,6 +226,10 @@ main {
       opacity: 0.5;
       border-color: #d3b923;
       transition: all 0.7s ease-out; }
+  .projects .displayed {
+    display: block; }
+  .projects .hidden {
+    display: none; }
   .projects .project-text {
     text-align: center;
     border: #d3b923 3px solid;
@@ -226,17 +261,20 @@ main {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 1rem; }
-  .boxes div, .boxes a {
+  .boxes div,
+  .boxes a:not(.mailAnchor) {
     font-size: 2rem;
-    border: 3px #fff solid;
     padding: 1.5rem 2.5rem;
     margin-bottom: 3rem;
-    transition: all 0.7s ease-out; }
-    .boxes div:hover, .boxes a:hover {
+    transition: all 0.7s ease-out;
+    border: 3px #fff solid; }
+    .boxes div:hover,
+    .boxes a:not(.mailAnchor):hover {
       padding: 1rem 2rem;
       background: #d3b923;
       color: #000; }
-      .boxes div:hover span, .boxes a:hover span {
+      .boxes div:hover span,
+      .boxes a:not(.mailAnchor):hover span {
         color: #000; }
 
 #main-footer {
@@ -300,7 +338,7 @@ main {
   .projects {
     grid-template-columns: repeat(4, 1fr); }
   .selecting {
-    grid-template-columns: repeat(6, 1fr); } }
+    grid-template-columns: repeat(7, 1fr); } }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .projects {
@@ -317,11 +355,13 @@ main {
     main .lg-heading {
       line-height: 1;
       margin-bottom: 1rem; }
-  ul.menu-nav, div.menu-branding {
+  ul.menu-nav,
+  div.menu-branding {
     float: none;
     width: 100%;
     min-height: 0; }
-    ul.menu-nav.show, div.menu-branding.show {
+    ul.menu-nav.show,
+    div.menu-branding.show {
       transform: translate3d(0, 0, 0); }
   .menu-nav {
     height: 75vh;
@@ -348,7 +388,7 @@ main {
   .nav-item:nth-child(4) {
     transition-delay: 0.4s; }
   .about-info {
-    grid-template-areas: 'bioimage' 'bio' 'job1' 'job2' 'job3';
+    grid-template-areas: "bioimage" "bio" "job1" "job2" "job3";
     grid-template-columns: 1fr; }
   .projects {
     grid-template-columns: repeat(2, 1fr); }
